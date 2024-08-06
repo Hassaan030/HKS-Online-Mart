@@ -1,0 +1,1 @@
+Hi, I am the static file you should also learn django
