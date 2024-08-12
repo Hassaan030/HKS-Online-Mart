@@ -1,23 +1,24 @@
 {% extends 'shop/basic.html' %}
+{% load static %}
+{% block title %}About Us{% endblock %}
 
-{% block title%} About Us{% endblock %}
 {% block body %}
-
-
-
-
 <main role="main">
-
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-3">HKS Online Mart</h1>
-      <p>HKS Online Mart Pvt Ltd. is a Pakistani e-commerce company based in Islamabad, Pakistan. Founded by etc, the company initially focused on book sales, before expanding into other product categories such as consumer electronics, fashion, and lifestyle products.
-
-The service competes primarily with  subsidiary, and the domestic rival Snapdeal.[5][6] as of March 2017, HKS Online Cart held a 39.5% market share of India's e-commerce industry.[7] HKS Online Cart is significantly dominant in the sale of apparel (a position that was bolstered by its acquisitions of Myntra and Jabong.com), and was described as being "neck and neck" with Amazon in the sale of electronics and mobile phones.[8] HKS Online Cart also owns PhonePe, a mobile payments service based on the Unified Payments Interface (UPI).
-
-In August 2018, U.S.-based retail chain Walmart acquired a 77% controlling stake in HKS Online Cart for US$16 billion, valuing it at $22 billion.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h1 class="display-3" style="font-family: Times New Roman; color: rgba(49, 216, 16, 0.571); font-weight: bold;" >HKS Online Mart</h1>
+          <p>HKS Online Mart Pvt Ltd. is a Pakistani e-commerce company based in Islamabad, Pakistan. Founded by Hassaan, the company initially focused on book sales, before expanding into other product categories such as consumer electronics, fashion, and lifestyle products. HKS Online Mart has grown to become a leading player in the e-commerce industry, offering a wide range of products to meet the needs of its diverse customer base.</p>
+          <p>Competing primarily with E-markets, and domestic rival Snapdeal, HKS Online Mart held a 39.5% market share of Pakistan's e-commerce industry as of March 2017. The company is particularly dominant in the sale of apparel, a position strengthened by its acquisitions of Myntra and Jabong.com. It is also a key player in electronics and mobile phones, often compared with Amazon in these segments. Additionally, HKS Online Mart owns PhonePe, a mobile payments service based on the Unified Payments Interface (UPI).</p>
+          <p>In August 2018, U.S.-based retail chain Walmart acquired a 77% controlling stake in HKS Online Mart for US$16 billion, valuing the company at $22 billion.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="{% static 'shop/hks.png' %}" alt="HKS Online Mart" class="img-fluid" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
     </div>
   </div>
 
@@ -25,30 +26,24 @@ In August 2018, U.S.-based retail chain Walmart acquired a 77% controlling stake
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        <h2>Our Mission</h2>
+        <p>At HKS Online Mart, our mission is to provide an exceptional shopping experience by offering a wide range of high-quality products at competitive prices. We are committed to ensuring customer satisfaction through reliable service and innovative solutions. Our goal is to make online shopping accessible and enjoyable for everyone, contributing to the growth of the e-commerce industry in Pakistan.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Learn more »</a></p>
       </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        <h2>Our History</h2>
+        <p>Founded in [year], HKS Online Mart began its journey as a small online bookstore. Over the years, we expanded our product offerings to include electronics, fashion, and lifestyle items. Our growth has been driven by a commitment to excellence and a focus on meeting the evolving needs of our customers. Today, HKS Online Mart stands as a leading e-commerce platform with a strong market presence and a reputation for reliability.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Learn more »</a></p>
       </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        <h2>Our Values</h2>
+        <p>We believe in the values of integrity, innovation, and customer-centricity. Our team is dedicated to maintaining the highest standards of service, ensuring that every customer interaction is positive and fulfilling. We embrace change and continuously seek new ways to enhance our offerings and operations. Our core values guide us in our mission to be a trusted and forward-thinking leader in the e-commerce industry.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Learn more »</a></p>
       </div>
     </div>
 
     <hr>
 
   </div> <!-- /container -->
-
 </main>
-
-
-
-
-
 {% endblock %}
