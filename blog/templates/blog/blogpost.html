@@ -1,5 +1,6 @@
 {% extends 'blog/basic.html' %}
 
+
 {% block body %}
 <div class="container">
     <div class="row mt-4">
@@ -9,9 +10,11 @@
             </h3>
 
             <div class="blog-post">
-                <h2 class="blog-post-title">{{post.heading0}}</h2>
-                <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-                <div class="fb-like" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div><br>
+                <h2 class="blog-post-title">{{post.head0}}</h2>
+                <img src="{{ post.thumbnail.url }}" alt="Thumbnail" style="width: 450px; height: 220px;">
+                <p class="blog-post-meta" style="font-size: small;">{{post.pub_date}}<a href="#"> HKSOM</a></p>
+                
+            
 
                 <p>{{post.chead0}}</p>
 
@@ -20,7 +23,7 @@
                 <p>{{post.chead1}}</p>
                 <h2>{{post.head2}}</h2>
                 <p>{{post.chead2}}</p>
-                <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-numposts="5"></div>
+                <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-numposts="2"></div>
                 
                
             </div><!-- /.blog-post -->
@@ -33,8 +36,13 @@
         <aside class="col-md-4 blog-sidebar">
             <div class="p-4 mb-3 bg-light rounded">
                 <h4 class="font-italic">About</h4>
-                <p class="mb-0">HKS Online Mart <em>started out as a small project and is now</em> the fastest growing e-commerce stores of all times in india and abroad.</p>
-                <div class="my-3 fb-share-button" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2Fblog%2Fblogpost%2F4&src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                <p class="mb-0">HKS Online Mart <em>started out as a small project and is now</em> the fastest growing e-commerce stores of all times in Pakistan and abroad.</p>
+                <p></p>
+                <p></p>
+               
+                
+                
+                <div class="fb-like" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true" ></div><br>
             </div>
 
            
